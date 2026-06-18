@@ -361,7 +361,7 @@ body {
 }
 .project-card:hover { border-color: var(--cyan); transform: translateY(-4px); }
 .project-img { position: relative; overflow: hidden; flex-shrink: 0; }
-.project-img img { width: 100%; display: block; aspect-ratio: 16/9; object-fit: cover; }
+.project-img img { width: 100%; display: block; aspect-ratio: 16/9; object-fit: contain; }
 .project-overlay {
   position: absolute; inset: 0; background: rgba(10,15,30,0.88);
   display: flex; align-items: center; justify-content: center;
