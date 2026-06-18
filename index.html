@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jaskaran Singh | IT & Full-Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ── NAVIGATION ── -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#hero">JASS<span class="accent">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">🌙</button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-orb orb-1"></div>
+    <div class="hero-orb orb-2"></div>
+    <div class="hero-inner">
+      <div class="hero-content">
+        <p class="hero-eyebrow"><span class="dot"></span> Available for opportunities</p>
+        <h1 class="hero-name">Jaskaran<br /><span class="accent">Singh</span></h1>
+        <div class="hero-terminal">
+          <span class="terminal-prompt">$ </span>
+          <span class="terminal-text" id="typed-text"></span>
+          <span class="terminal-cursor">▋</span>
+        </div>
+        <p class="hero-sub">IT Security enthusiast &amp; Full-Stack Developer based in Berlin, building secure and performant digital experiences.</p>
+        <div class="hero-ctas">
+          <a href="#projects" class="btn-primary">View My Work</a>
+          <a href="#contact" class="btn-ghost">Get in Touch</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <div class="photo-frame">
+          <img src="images/placeholder/profile.jpg" alt="Jaskaran Singh" id="profile-img" />
+          <div class="photo-badge"><span>🇩🇪</span> Berlin</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section id="about" class="section">
+    <div class="container">
+      <p class="section-label">// about me</p>
+      <h2 class="section-title">Who I Am</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>I'm a motivated IT professional and Computer & Systems Engineering Master's student at TU Ilmenau. With a strong foundation in technical support, network security, and full-stack development, I bridge the gap between infrastructure security and modern web engineering.</p>
+          <p>I thrive on catching vulnerabilities before they become problems, building secure systems from the ground up, and writing clean, performant code. Whether it's managing a LAN/WAN or architecting a MongoDB database with RBAC, I bring the same level of care and precision.</p>
+          <div class="about-stats">
+            <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Years Experience</span></div>
+            <div class="stat"><span class="stat-num">10+</span><span class="stat-label">Technologies</span></div>
+            <div class="stat"><span class="stat-num">2</span><span class="stat-label">Languages</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ── -->
+  <section id="skills" class="section section-dark">
+    <div class="container">
+      <p class="section-label">// what I use</p>
+      <h2 class="section-title">Skills &amp; Stack</h2>
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-icon">⚛️</div>
+          <h3>Frontend</h3>
+          <div class="skill-tags">
+            <span>TypeScript</span><span>JavaScript</span><span>React.js</span>
+            <span>Next.js</span><span>Vue.js</span><span>HTML5</span>
+            <span>CSS3</span><span>Tailwind</span><span>Material UI</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">🛠️</div>
+          <h3>Backend</h3>
+          <div class="skill-tags">
+            <span>Node.js</span><span>Express.js</span><span>REST API</span>
+            <span>GraphQL</span><span>JWT</span><span>RBAC</span>
+            <span>MVC</span><span>OOP</span><span>Microservices</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">🗄️</div>
+          <h3>Databases</h3>
+          <div class="skill-tags">
+            <span>MongoDB</span><span>PostgreSQL</span><span>MySQL</span>
+            <span>SQL</span><span>NoSQL</span><span>Indexing</span>
+            <span>Aggregation</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">🔐</div>
+          <h3>IT Security &amp; Networking</h3>
+          <div class="skill-tags">
+            <span>LAN/WAN</span><span>Router Config</span><span>Wi-Fi</span>
+            <span>Endpoint Protection</span><span>Vulnerability Analysis</span>
+            <span>Phishing Response</span><span>Firewall</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">💻</div>
+          <h3>Systems &amp; Tools</h3>
+          <div class="skill-tags">
+            <span>Windows</span><span>Linux</span><span>macOS</span>
+            <span>Microsoft Office</span><span>Git</span><span>GitHub</span>
+            <span>Documentation</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">🌍</div>
+          <h3>Soft Skills</h3>
+          <div class="skill-tags">
+            <span>Problem Solving</span><span>Team Work</span>
+            <span>Communication</span><span>Time Management</span>
+            <span>Customer Support</span><span>Attention to Detail</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EXPERIENCE ── -->
+  <section id="experience" class="section">
+    <div class="container">
+      <p class="section-label">// where I've worked</p>
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Technical Support Executive / Network Technician</h3>
+                <p class="company">Cyberbells ITES</p>
+              </div>
+              <span class="timeline-date">Apr 2024 – Nov 2025</span>
+            </div>
+            <ul>
+              <li>Managed Windows, macOS, and Linux systems including installation, configuration, and troubleshooting</li>
+              <li>Maintained network infrastructure: routers, switches, LAN/WAN, and Wi-Fi systems</li>
+              <li>Proactively identified and resolved hardware, software, and network vulnerabilities</li>
+              <li>Implemented security measures focused on system stability and data protection</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Customer Service Representative</h3>
+                <p class="company">Teleperformance Global Business Pvt. Ltd.</p>
+              </div>
+              <span class="timeline-date">Sep 2022 – Feb 2024</span>
+            </div>
+            <ul>
+              <li>Handled customer inquiries via phone, email, and chat with focus on satisfaction</li>
+              <li>Provided technical and service-related problem resolution</li>
+              <li>Documented and tracked requests to improve internal processes</li>
+              <li>Developed strong multitasking and communication skills in a dynamic environment</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EDUCATION ── -->
+  <section id="education" class="section section-dark">
+    <div class="container">
+      <p class="section-label">// where I studied</p>
+      <h2 class="section-title">Education</h2>
+      <div class="edu-grid">
+        <div class="edu-card reveal">
+          <span class="edu-icon">🎓</span>
+          <div>
+            <h4>M.Sc. Computer &amp; Systems Engineering</h4>
+            <p>Technische Universität Ilmenau</p>
+            <span>2026 – Present</span>
+          </div>
+        </div>
+        <div class="edu-card reveal">
+          <span class="edu-icon">🎓</span>
+          <div>
+            <h4>Bachelor of Computer Application</h4>
+            <p>Guru Nanak Dev University, Punjab</p>
+            <span>2020 – 2023 · GPA 7.59/10</span>
+          </div>
+        </div>
+        <div class="edu-card reveal">
+          <span class="edu-icon">🤖</span>
+          <div>
+            <h4>Certificate in AI &amp; Data Science</h4>
+            <p>GNDU Punjab</p>
+            <span>2022 – 2023 · 6.5/10</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ── -->
+  <section id="projects" class="section">
+    <div class="container">
+      <p class="section-label">// things I've built</p>
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card reveal">
+          <div class="project-img">
+            <img src="images/placeholder/project1.jpg" alt="NeuroRevive 360" />
+            <div class="project-overlay">
+              <a href="https://neuro-revive360.vercel.app" target="_blank" class="project-link">View Live ↗</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-type">Web Application</span>
+            <h3>NeuroRevive 360</h3>
+            <p>A high-performance Next.js web app with SSR, SEO optimisation (Lighthouse score >90%), MongoDB architecture with 6+ collections, RBAC access control, and a fully responsive WCAG-compliant UI built with Tailwind CSS.</p>
+            <div class="project-stack">
+              <span>Next.js</span><span>MongoDB</span><span>Tailwind</span><span>RBAC</span><span>SSR</span>
+            </div>
+            <div class="project-links">
+              <a href="https://neuro-revive360.vercel.app" target="_blank">Live Demo ↗</a>
+            
+            </div>
+          </div>
+        </div>
+        <div class="project-card reveal">
+          <div class="project-img">
+            <img src="images/placeholder/project2.jpg" alt="Secure Messaging System" />
+            <div class="project-overlay">
+              <a href="https://github.com/jaskaranarora1/Secure-Messaging-System-Using-Encryption-Techniques" target="_blank" class="project-link">View on GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-type">Security / Encryption</span>
+            <h3>Secure Messaging System</h3>
+            <p>A messaging platform built with end-to-end encryption techniques. Demonstrates applied cryptography and secure system design — the project that deepened my passion for IT security and applied encryption.</p>
+            <div class="project-stack">
+              <span>HTML</span><span>Encryption</span><span>Security</span><span>Cryptography</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/jaskaranarora1/Secure-Messaging-System-Using-Encryption-Techniques" target="_blank">GitHub ↗</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card reveal">
+          <div class="project-img">
+            <img src="images/placeholder/project3.jpg" alt="Road Damage Detection" />
+            <div class="project-overlay">
+              <a href="https://github.com/jaskaranarora1/road-damage-detection-cnn" target="_blank" class="project-link">View on GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-type">AI / Machine Learning</span>
+            <h3>Road Damage Detection CNN</h3>
+            <p>A convolutional neural network model trained to detect and classify road surface damage from images. Applied deep learning techniques to a real-world infrastructure problem, combining Computer Vision with AI.</p>
+            <div class="project-stack">
+              <span>Python</span><span>CNN</span><span>AI</span><span>Computer Vision</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/jaskaranarora1/road-damage-detection-cnn" target="_blank">GitHub ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact" class="section section-dark">
+    <div class="container">
+      <p class="section-label">// let's connect</p>
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="contact-intro">I'm currently open to working student and internship opportunities in IT Security and Full-Stack Development. Feel free to reach out through any of the channels below.</p>
+      <div class="contact-grid">
+        <a class="contact-card reveal" href="https://github.com/jaskaranarora1" target="_blank">
+          <div class="contact-card-icon github">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          </div>
+          <h3>GitHub</h3>
+          <p>github.com/jaskaranarora1</p>
+          <span class="contact-arrow">↗</span>
+        </a>
+        <a class="contact-card reveal" href="https://linkedin.com/in/jassk" target="_blank">
+          <div class="contact-card-icon linkedin">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </div>
+          <h3>LinkedIn</h3>
+          <p>linkedin.com/in/jassk</p>
+          <span class="contact-arrow">↗</span>
+        </a>
+        <a class="contact-card reveal" href="https://wa.me/4915212379037" target="_blank">
+          <div class="contact-card-icon whatsapp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </div>
+          <h3>WhatsApp</h3>
+          <p>+49 152 1237 9037</p>
+          <span class="contact-arrow">↗</span>
+        </a>
+        <a class="contact-card reveal" href="https://instagram.com/jaskaranarora1" target="_blank">
+          <div class="contact-card-icon instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </div>
+          <h3>Instagram</h3>
+          <p>@jaskaranarora1</p>
+          <span class="contact-arrow">↗</span>
+        </a>
+        <a class="contact-card reveal" href="mailto:jass.arora2001@gmail.com">
+          <div class="contact-card-icon email">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 010 19.366V5.457c0-.904.732-1.636 1.636-1.636h.91L12 10.09l9.455-6.27h.909A1.636 1.636 0 0124 5.457z"/></svg>
+          </div>
+          <h3>Email</h3>
+          <p>jass.arora2001@gmail.com</p>
+          <span class="contact-arrow">↗</span>
+        </a>
+        <a class="contact-card reveal" href="Jaskaran_CV.pdf" download>
+          <div class="contact-card-icon cv">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm-1 1.5L18.5 9H13V3.5zM8 17h8v1H8v-1zm0-3h8v1H8v-1zm0-3h5v1H8v-1z"/></svg>
+          </div>
+          <h3>Download CV</h3>
+          <p>Get my full résumé</p>
+          <span class="contact-arrow">↓</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="container footer-inner">
+      <span class="nav-logo">JASS<span class="accent">.</span></span>
+      <p>Designed &amp; built by Jaskaran Singh &middot; Berlin 2025</p>
+      <p class="footer-note">M.Sc. Computer &amp; Systems Engineering · TU Ilmenau</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
