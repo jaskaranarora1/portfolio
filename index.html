@@ -15,13 +15,18 @@
     <div class="nav-inner">
       <a class="nav-logo" href="#hero">JASS<span class="accent">.</span></a>
       <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about" data-en="About" data-de="Über mich">About</a></li>
+        <li><a href="#experience" data-en="Experience" data-de="Erfahrung">Experience</a></li>
+        <li><a href="#projects" data-en="Projects" data-de="Projekte">Projects</a></li>
+        <li><a href="#education" data-en="Education" data-de="Ausbildung">Education</a></li>
+        <li><a href="#skills" data-en="Skills" data-de="Fähigkeiten">Skills</a></li>
+        <li><a href="#contact" data-en="Contact" data-de="Kontakt">Contact</a></li>
       </ul>
+      <button class="lang-toggle" id="lang-toggle" data-active="de" aria-label="Switch language">
+  <span class="lang-slider"></span>
+  <span class="lang-opt" data-lang="en">EN</span>
+  <span class="lang-opt active" data-lang="de">DE</span>
+</button>
       <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">🌙</button>
       <button class="hamburger" id="hamburger" aria-label="Menu">
         <span></span><span></span><span></span>
@@ -36,17 +41,17 @@
     <div class="hero-orb orb-2"></div>
     <div class="hero-inner">
       <div class="hero-content">
-        <p class="hero-eyebrow"><span class="dot"></span> Available for opportunities</p>
+        <p class="hero-eyebrow"><span class="dot"></span> <span data-en="Available for opportunities" data-de="Verfügbar für neue Möglichkeiten">Available for opportunities</span></p>
         <h1 class="hero-name">Jaskaran<br /><span class="accent">Singh</span></h1>
         <div class="hero-terminal">
           <span class="terminal-prompt">$ </span>
           <span class="terminal-text" id="typed-text"></span>
           <span class="terminal-cursor">▋</span>
         </div>
-        <p class="hero-sub">IT Security enthusiast &amp; Full-Stack Developer based in Berlin, building secure and performant digital experiences.</p>
+        <p class="hero-sub" data-en="IT Security enthusiast &amp; Full-Stack Developer based in Berlin, building secure and performant digital experiences." data-de="IT-Security-Enthusiast &amp; Full-Stack-Entwickler aus Berlin, der sichere und performante digitale Erlebnisse entwickelt.">IT Security enthusiast &amp; Full-Stack Developer based in Berlin, building secure and performant digital experiences.</p>
         <div class="hero-ctas">
-          <a href="#projects" class="btn-primary">View My Work</a>
-          <a href="#contact" class="btn-ghost">Get in Touch</a>
+          <a href="#projects" class="btn-primary" data-en="View My Work" data-de="Meine Arbeit ansehen">View My Work</a>
+          <a href="#contact" class="btn-ghost" data-en="Get in Touch" data-de="Kontakt aufnehmen">Get in Touch</a>
         </div>
       </div>
       <div class="hero-photo">
@@ -61,80 +66,16 @@
   <!-- ── ABOUT ── -->
   <section id="about" class="section">
     <div class="container">
-      <p class="section-label">// about me</p>
-      <h2 class="section-title">Who I Am</h2>
+      <p class="section-label" data-en="// about me" data-de="// über mich">// about me</p>
+      <h2 class="section-title" data-en="Who I Am" data-de="Wer ich bin">Who I Am</h2>
       <div class="about-grid">
         <div class="about-text reveal">
-          <p>I'm a motivated IT professional and Computer & Systems Engineering Master's student at TU Ilmenau. With a strong foundation in technical support, network security, and full-stack development, I bridge the gap between infrastructure security and modern web engineering.</p>
-          <p>I thrive on catching vulnerabilities before they become problems, building secure systems from the ground up, and writing clean, performant code. Whether it's managing a LAN/WAN or architecting a MongoDB database with RBAC, I bring the same level of care and precision.</p>
+          <p data-en="I'm a motivated IT professional and Computer &amp; Systems Engineering Master's student at TU Ilmenau. With a strong foundation in technical support, network security, and full-stack development, I bridge the gap between infrastructure security and modern web engineering." data-de="Ich bin ein motivierter IT-Profi und Masterstudent im Bereich Computer &amp; Systems Engineering an der TU Ilmenau. Mit einer soliden Grundlage in technischem Support, Netzwerksicherheit und Full-Stack-Entwicklung verbinde ich Infrastruktursicherheit mit moderner Web-Entwicklung.">I'm a motivated IT professional and Computer &amp; Systems Engineering Master's student at TU Ilmenau. With a strong foundation in technical support, network security, and full-stack development, I bridge the gap between infrastructure security and modern web engineering.</p>
+          <p data-en="I thrive on catching vulnerabilities before they become problems, building secure systems from the ground up, and writing clean, performant code. Whether it's managing a LAN/WAN or architecting a MongoDB database with RBAC, I bring the same level of care and precision." data-de="Ich liebe es, Schwachstellen zu erkennen, bevor sie zu Problemen werden, sichere Systeme von Grund auf aufzubauen und sauberen, performanten Code zu schreiben. Ob die Verwaltung eines LAN/WAN oder der Aufbau einer MongoDB-Datenbank mit RBAC – ich bringe stets die gleiche Sorgfalt und Präzision mit.">I thrive on catching vulnerabilities before they become problems, building secure systems from the ground up, and writing clean, performant code. Whether it's managing a LAN/WAN or architecting a MongoDB database with RBAC, I bring the same level of care and precision.</p>
           <div class="about-stats">
-            <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Years Experience</span></div>
-            <div class="stat"><span class="stat-num">10+</span><span class="stat-label">Technologies</span></div>
-            <div class="stat"><span class="stat-num">2</span><span class="stat-label">Languages</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── SKILLS ── -->
-  <section id="skills" class="section section-dark">
-    <div class="container">
-      <p class="section-label">// what I use</p>
-      <h2 class="section-title">Skills &amp; Stack</h2>
-      <div class="skills-grid">
-        <div class="skill-card reveal">
-          <div class="skill-icon">⚛️</div>
-          <h3>Frontend</h3>
-          <div class="skill-tags">
-            <span>TypeScript</span><span>JavaScript</span><span>React.js</span>
-            <span>Next.js</span><span>Vue.js</span><span>HTML5</span>
-            <span>CSS3</span><span>Tailwind</span><span>Material UI</span>
-          </div>
-        </div>
-        <div class="skill-card reveal">
-          <div class="skill-icon">🛠️</div>
-          <h3>Backend</h3>
-          <div class="skill-tags">
-            <span>Node.js</span><span>Express.js</span><span>REST API</span>
-            <span>GraphQL</span><span>JWT</span><span>RBAC</span>
-            <span>MVC</span><span>OOP</span><span>Microservices</span>
-          </div>
-        </div>
-        <div class="skill-card reveal">
-          <div class="skill-icon">🗄️</div>
-          <h3>Databases</h3>
-          <div class="skill-tags">
-            <span>MongoDB</span><span>PostgreSQL</span><span>MySQL</span>
-            <span>SQL</span><span>NoSQL</span><span>Indexing</span>
-            <span>Aggregation</span>
-          </div>
-        </div>
-        <div class="skill-card reveal">
-          <div class="skill-icon">🔐</div>
-          <h3>IT Security &amp; Networking</h3>
-          <div class="skill-tags">
-            <span>LAN/WAN</span><span>Router Config</span><span>Wi-Fi</span>
-            <span>Endpoint Protection</span><span>Vulnerability Analysis</span>
-            <span>Phishing Response</span><span>Firewall</span>
-          </div>
-        </div>
-        <div class="skill-card reveal">
-          <div class="skill-icon">💻</div>
-          <h3>Systems &amp; Tools</h3>
-          <div class="skill-tags">
-            <span>Windows</span><span>Linux</span><span>macOS</span>
-            <span>Microsoft Office</span><span>Git</span><span>GitHub</span>
-            <span>Documentation</span>
-          </div>
-        </div>
-        <div class="skill-card reveal">
-          <div class="skill-icon">🌍</div>
-          <h3>Soft Skills</h3>
-          <div class="skill-tags">
-            <span>Problem Solving</span><span>Team Work</span>
-            <span>Communication</span><span>Time Management</span>
-            <span>Customer Support</span><span>Attention to Detail</span>
+            <div class="stat"><span class="stat-num">3+</span><span class="stat-label" data-en="Years Experience" data-de="Jahre Erfahrung">Years Experience</span></div>
+            <div class="stat"><span class="stat-num">10+</span><span class="stat-label" data-en="Technologies" data-de="Technologien">Technologies</span></div>
+            <div class="stat"><span class="stat-num">2</span><span class="stat-label" data-en="Languages" data-de="Sprachen">Languages</span></div>
           </div>
         </div>
       </div>
@@ -142,26 +83,26 @@
   </section>
 
   <!-- ── EXPERIENCE ── -->
-  <section id="experience" class="section">
+  <section id="experience" class="section section-dark">
     <div class="container">
-      <p class="section-label">// where I've worked</p>
-      <h2 class="section-title">Experience</h2>
+      <p class="section-label" data-en="// where I've worked" data-de="// wo ich gearbeitet habe">// where I've worked</p>
+      <h2 class="section-title" data-en="Experience" data-de="Erfahrung">Experience</h2>
       <div class="timeline">
         <div class="timeline-item reveal">
           <div class="timeline-dot"></div>
           <div class="timeline-card">
             <div class="timeline-header">
               <div>
-                <h3>Technical Support Executive / Network Technician</h3>
+                <h3 data-en="Technical Support Executive / Network Technician" data-de="Technischer Support / Netzwerktechniker">Technical Support Executive / Network Technician</h3>
                 <p class="company">Cyberbells ITES</p>
               </div>
               <span class="timeline-date">Apr 2024 – Nov 2025</span>
             </div>
             <ul>
-              <li>Managed Windows, macOS, and Linux systems including installation, configuration, and troubleshooting</li>
-              <li>Maintained network infrastructure: routers, switches, LAN/WAN, and Wi-Fi systems</li>
-              <li>Proactively identified and resolved hardware, software, and network vulnerabilities</li>
-              <li>Implemented security measures focused on system stability and data protection</li>
+              <li data-en="Managed Windows, macOS, and Linux systems including installation, configuration, and troubleshooting" data-de="Verwaltung von Windows-, macOS- und Linux-Systemen einschließlich Installation, Konfiguration und Fehlerbehebung">Managed Windows, macOS, and Linux systems including installation, configuration, and troubleshooting</li>
+              <li data-en="Maintained network infrastructure: routers, switches, LAN/WAN, and Wi-Fi systems" data-de="Wartung der Netzwerkinfrastruktur: Router, Switches, LAN/WAN und WLAN-Systeme">Maintained network infrastructure: routers, switches, LAN/WAN, and Wi-Fi systems</li>
+              <li data-en="Proactively identified and resolved hardware, software, and network vulnerabilities" data-de="Proaktive Identifizierung und Behebung von Hardware-, Software- und Netzwerkschwachstellen">Proactively identified and resolved hardware, software, and network vulnerabilities</li>
+              <li data-en="Implemented security measures focused on system stability and data protection" data-de="Implementierung von Sicherheitsmaßnahmen mit Fokus auf Systemstabilität und Datenschutz">Implemented security measures focused on system stability and data protection</li>
             </ul>
           </div>
         </div>
@@ -170,51 +111,17 @@
           <div class="timeline-card">
             <div class="timeline-header">
               <div>
-                <h3>Customer Service Representative</h3>
+                <h3 data-en="Customer Service Representative" data-de="Kundenservice-Mitarbeiter">Customer Service Representative</h3>
                 <p class="company">Teleperformance Global Business Pvt. Ltd.</p>
               </div>
               <span class="timeline-date">Sep 2022 – Feb 2024</span>
             </div>
             <ul>
-              <li>Handled customer inquiries via phone, email, and chat with focus on satisfaction</li>
-              <li>Provided technical and service-related problem resolution</li>
-              <li>Documented and tracked requests to improve internal processes</li>
-              <li>Developed strong multitasking and communication skills in a dynamic environment</li>
+              <li data-en="Handled customer inquiries via phone, email, and chat with focus on satisfaction" data-de="Bearbeitung von Kundenanfragen per Telefon, E-Mail und Chat mit Fokus auf Kundenzufriedenheit">Handled customer inquiries via phone, email, and chat with focus on satisfaction</li>
+              <li data-en="Provided technical and service-related problem resolution" data-de="Technische und servicebezogene Problemlösung">Provided technical and service-related problem resolution</li>
+              <li data-en="Documented and tracked requests to improve internal processes" data-de="Dokumentation und Nachverfolgung von Anfragen zur Verbesserung interner Prozesse">Documented and tracked requests to improve internal processes</li>
+              <li data-en="Developed strong multitasking and communication skills in a dynamic environment" data-de="Entwicklung starker Multitasking- und Kommunikationsfähigkeiten in einem dynamischen Umfeld">Developed strong multitasking and communication skills in a dynamic environment</li>
             </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── EDUCATION ── -->
-  <section id="education" class="section section-dark">
-    <div class="container">
-      <p class="section-label">// where I studied</p>
-      <h2 class="section-title">Education</h2>
-      <div class="edu-grid">
-        <div class="edu-card reveal">
-          <span class="edu-icon">🎓</span>
-          <div>
-            <h4>M.Sc. Computer &amp; Systems Engineering</h4>
-            <p>Technische Universität Ilmenau</p>
-            <span>2026 – Present</span>
-          </div>
-        </div>
-        <div class="edu-card reveal">
-          <span class="edu-icon">🎓</span>
-          <div>
-            <h4>Bachelor of Computer Application</h4>
-            <p>Guru Nanak Dev University, Punjab</p>
-            <span>2020 – 2023 · GPA 7.59/10</span>
-          </div>
-        </div>
-        <div class="edu-card reveal">
-          <span class="edu-icon">🤖</span>
-          <div>
-            <h4>Certificate in AI &amp; Data Science</h4>
-            <p>GNDU Punjab</p>
-            <span>2022 – 2023 · 6.5/10</span>
           </div>
         </div>
       </div>
@@ -224,134 +131,220 @@
   <!-- ── PROJECTS ── -->
   <section id="projects" class="section">
     <div class="container">
-      <p class="section-label">// things I've built</p>
-      <h2 class="section-title">Projects</h2>
+      <p class="section-label" data-en="// things I've built" data-de="// was ich gebaut habe">// things I've built</p>
+      <h2 class="section-title" data-en="Projects" data-de="Projekte">Projects</h2>
       <div class="projects-grid">
+
+        <!-- 1. NeuroRevive 360 -->
         <div class="project-card reveal">
           <div class="project-img">
             <img src="images/placeholder/project1.jpg" alt="NeuroRevive 360" />
             <div class="project-overlay">
-              <a href="https://neuro-revive360.vercel.app" target="_blank" class="project-link">View Live ↗</a>
+              <a href="https://neuro-revive360.vercel.app" target="_blank" class="project-link" data-en="View Live ↗" data-de="Live ansehen ↗">View Live ↗</a>
             </div>
           </div>
           <div class="project-body">
-            <span class="project-type">Web Application</span>
+            <span class="project-type" data-en="Web Application" data-de="Webanwendung">Web Application</span>
             <h3>NeuroRevive 360</h3>
-            <p>A high-performance Next.js web app with SSR, SEO optimisation (Lighthouse score >90%), MongoDB architecture with 6+ collections, RBAC access control, and a fully responsive WCAG-compliant UI built with Tailwind CSS.</p>
+            <p data-en="A high-performance Next.js web app with SSR, SEO optimisation (Lighthouse score >90%), MongoDB architecture with 6+ collections, RBAC access control, and a fully responsive WCAG-compliant UI built with Tailwind CSS." data-de="Eine performante Next.js-Webanwendung mit SSR, SEO-Optimierung (Lighthouse-Score >90%), MongoDB-Architektur mit über 6 Collections, RBAC-Zugriffskontrolle und einer voll responsiven, WCAG-konformen Oberfläche mit Tailwind CSS.">A high-performance Next.js web app with SSR, SEO optimisation (Lighthouse score >90%), MongoDB architecture with 6+ collections, RBAC access control, and a fully responsive WCAG-compliant UI built with Tailwind CSS.</p>
             <div class="project-stack">
               <span>Next.js</span><span>MongoDB</span><span>Tailwind</span><span>RBAC</span><span>SSR</span>
             </div>
             <div class="project-links">
-              <a href="https://neuro-revive360.vercel.app" target="_blank">Live Demo ↗</a>
-            
+              <a href="https://neuro-revive360.vercel.app" target="_blank" data-en="Live Demo ↗" data-de="Live-Demo ↗">Live Demo ↗</a>
             </div>
           </div>
         </div>
+
+        <!-- 2. Road Damage Detection CNN -->
         <div class="project-card reveal">
-  <div class="project-img">
-    <img src="images/placeholder/nqueens.png" alt="N-Queens Optimization Solver" />
-    <div class="project-overlay">
-      <a href="https://github.com/jaskaranarora1/N-Queens-problem" target="_blank" class="project-link">View on GitHub ↗</a>
-    </div>
-  </div>
+          <div class="project-img">
+            <img src="images/placeholder/project3.jpg" alt="Road Damage Detection" />
+            <div class="project-overlay">
+              <a href="https://road-damage-detection-cnn.netlify.app/" target="_blank" class="project-link" data-en="View Live ↗" data-de="Live ansehen ↗">View Live ↗</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-type" data-en="AI / Machine Learning" data-de="KI / Maschinelles Lernen">AI / Machine Learning</span>
+            <h3>Road Damage Detection CNN</h3>
+            <p data-en="A convolutional neural network model trained to detect and classify road surface damage from images. Applied deep learning techniques to a real-world infrastructure problem, combining Computer Vision with AI." data-de="Ein Convolutional-Neural-Network-Modell, das trainiert wurde, um Straßenschäden anhand von Bildern zu erkennen und zu klassifizieren. Anwendung von Deep-Learning-Techniken auf ein reales Infrastrukturproblem – eine Kombination aus Computer Vision und KI.">A convolutional neural network model trained to detect and classify road surface damage from images. Applied deep learning techniques to a real-world infrastructure problem, combining Computer Vision with AI.</p>
+            <div class="project-stack">
+              <span>Python</span><span>CNN</span><span>AI</span><span>Computer Vision</span>
+            </div>
+            <div class="project-links">
+              <a href="https://road-damage-detection-cnn.netlify.app/" target="_blank" data-en="Live Demo ↗" data-de="Live-Demo ↗">Live Demo ↗</a>
+              <a href="https://github.com/jaskaranarora1/road-damage-detection-cnn" target="_blank">GitHub ↗</a>
+            </div>
+          </div>
+        </div>
 
-  <div class="project-body">
-    <span class="project-type">Algorithms & Optimization</span>
-    <h3>N-Queens Optimization Solver</h3>
+        <!-- 3. 3DES File Encryption System -->
+        <div class="project-card reveal">
+          <div class="project-img">
+            <img src="images/placeholder/3des.png" alt="3DES File Encryption System" />
+            <div class="project-overlay">
+              <a href="https://github.com/jaskaranarora1" target="_blank" class="project-link" data-en="View on GitHub ↗" data-de="Auf GitHub ansehen ↗">View on GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-type" data-en="Cybersecurity / Cryptography" data-de="Cybersicherheit / Kryptografie">Cybersecurity / Cryptography</span>
+            <h3>3DES File Encryption System</h3>
+            <p data-en="Developing a secure file encryption and decryption application using the Triple DES (3DES) cryptographic algorithm. The system supports multiple file formats including TXT, PDF, DOCX, and image files, while providing an intuitive desktop interface built with Tkinter. Features include secure key generation, file management, encryption workflows, and planned executable deployment using PyInstaller, demonstrating practical cryptography and secure software development principles." data-de="Entwicklung einer sicheren Anwendung zur Datei-Verschlüsselung und -Entschlüsselung mit dem Triple-DES-(3DES)-Algorithmus. Das System unterstützt mehrere Dateiformate wie TXT, PDF, DOCX und Bilddateien und bietet eine intuitive Desktop-Oberfläche mit Tkinter. Zu den Funktionen gehören sichere Schlüsselgenerierung, Dateiverwaltung, Verschlüsselungs-Workflows und eine geplante Bereitstellung als ausführbare Datei mit PyInstaller – ein Beispiel für praktische Kryptografie und sichere Softwareentwicklung.">Developing a secure file encryption and decryption application using the Triple DES (3DES) cryptographic algorithm. The system supports multiple file formats including TXT, PDF, DOCX, and image files, while providing an intuitive desktop interface built with Tkinter. Features include secure key generation, file management, encryption workflows, and planned executable deployment using PyInstaller, demonstrating practical cryptography and secure software development principles.</p>
+            <div class="project-stack">
+              <span>Python</span>
+              <span>PyCryptodome</span>
+              <span>Tkinter</span>
+              <span data-en="Cryptography" data-de="Kryptografie">Cryptography</span>
+              <span>PyInstaller</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/jaskaranarora1" target="_blank">GitHub ↗</a>
+            </div>
+          </div>
+        </div>
 
-    <p>
-      Developed and benchmarked multiple optimization algorithms to solve the
-      N-Queens problem, including Depth-First Search (DFS), Greedy Hill Climbing,
-      Simulated Annealing, and Genetic Algorithms. Built a performance analysis
-      framework to compare execution time, memory consumption, conflict reduction,
-      and scalability across board sizes up to N=500. Included data visualization
-      and benchmarking tools for algorithm evaluation and research.
-    </p>
-
-    <div class="project-stack">
-      <span>Algorithms</span>
-<span>Optimization</span>
-<span>Genetic Algorithm</span>
-<span>Simulated Annealing</span>
-<span>Python</span>
-    </div>
-
-    <div class="project-links">
-      <a href="https://github.com/jaskaranarora1/N-Queens-problem" target="_blank">GitHub ↗</a>
-    </div>
-  </div>
-</div>
-<div class="project-card reveal">
-  <div class="project-img">
-    <img src="images/placeholder/3des.png" alt="3DES File Encryption System" />
-    <div class="project-overlay">
-      <a href="https://github.com/jaskaranarora1" target="_blank" class="project-link">View on GitHub ↗</a>
-    </div>
-  </div>
-
-  <div class="project-body">
-    <span class="project-type">Cybersecurity / Cryptography</span>
-    <h3>3DES File Encryption System</h3>
-
-    <p>
-      Developing a secure file encryption and decryption application using the
-      Triple DES (3DES) cryptographic algorithm. The system supports multiple
-      file formats including TXT, PDF, DOCX, and image files, while providing
-      an intuitive desktop interface built with Tkinter. Features include secure
-      key generation, file management, encryption workflows, and planned
-      executable deployment using PyInstaller, demonstrating practical
-      cryptography and secure software development principles.
-    </p>
-
-    <div class="project-stack">
-      <span>Python</span>
-      <span>PyCryptodome</span>
-      <span>Tkinter</span>
-      <span>Cryptography</span>
-      <span>PyInstaller</span>
-    </div>
-
-    <div class="project-links">
-      <a href="https://github.com/jaskaranarora1" target="_blank">GitHub ↗</a>
-    </div>
-  </div>
-</div>
+        <!-- 4. Secure Messaging System -->
         <div class="project-card reveal">
           <div class="project-img">
             <img src="images/placeholder/project2.jpg" alt="Secure Messaging System" />
             <div class="project-overlay">
-              <a href="https://github.com/jaskaranarora1/Secure-Messaging-System-Using-Encryption-Techniques" target="_blank" class="project-link">View on GitHub ↗</a>
+              <a href="https://github.com/jaskaranarora1/Secure-Messaging-System-Using-Encryption-Techniques" target="_blank" class="project-link" data-en="View on GitHub ↗" data-de="Auf GitHub ansehen ↗">View on GitHub ↗</a>
             </div>
           </div>
           <div class="project-body">
-            <span class="project-type">Security / Encryption</span>
+            <span class="project-type" data-en="Security / Encryption" data-de="Sicherheit / Verschlüsselung">Security / Encryption</span>
             <h3>Secure Messaging System</h3>
-            <p>A messaging platform built with end-to-end encryption techniques. Demonstrates applied cryptography and secure system design — the project that deepened my passion for IT security and applied encryption.</p>
+            <p data-en="A messaging platform built with end-to-end encryption techniques. Demonstrates applied cryptography and secure system design — the project that deepened my passion for IT security and applied encryption." data-de="Eine Messaging-Plattform mit Ende-zu-Ende-Verschlüsselung. Sie zeigt angewandte Kryptografie und sicheres Systemdesign – das Projekt, das meine Leidenschaft für IT-Sicherheit und angewandte Verschlüsselung vertieft hat.">A messaging platform built with end-to-end encryption techniques. Demonstrates applied cryptography and secure system design — the project that deepened my passion for IT security and applied encryption.</p>
             <div class="project-stack">
-              <span>HTML</span><span>Encryption</span><span>Security</span><span>Cryptography</span>
+              <span>HTML</span><span data-en="Encryption" data-de="Verschlüsselung">Encryption</span><span data-en="Security" data-de="Sicherheit">Security</span><span data-en="Cryptography" data-de="Kryptografie">Cryptography</span>
             </div>
             <div class="project-links">
               <a href="https://github.com/jaskaranarora1/Secure-Messaging-System-Using-Encryption-Techniques" target="_blank">GitHub ↗</a>
             </div>
           </div>
         </div>
+
+        <!-- 5. N-Queens Optimization Solver -->
         <div class="project-card reveal">
           <div class="project-img">
-            <img src="images/placeholder/project3.jpg" alt="Road Damage Detection" />
+            <img src="images/placeholder/nqueens.png" alt="N-Queens Optimization Solver" />
             <div class="project-overlay">
-              <a href="https://github.com/jaskaranarora1/road-damage-detection-cnn" target="_blank" class="project-link">View on GitHub ↗</a>
+              <a href="https://github.com/jaskaranarora1/N-Queens-problem" target="_blank" class="project-link" data-en="View on GitHub ↗" data-de="Auf GitHub ansehen ↗">View on GitHub ↗</a>
             </div>
           </div>
           <div class="project-body">
-            <span class="project-type">AI / Machine Learning</span>
-            <h3>Road Damage Detection CNN</h3>
-            <p>A convolutional neural network model trained to detect and classify road surface damage from images. Applied deep learning techniques to a real-world infrastructure problem, combining Computer Vision with AI.</p>
+            <span class="project-type" data-en="Algorithms &amp; Optimization" data-de="Algorithmen &amp; Optimierung">Algorithms &amp; Optimization</span>
+            <h3>N-Queens Optimization Solver</h3>
+            <p data-en="Developed and benchmarked multiple optimization algorithms to solve the N-Queens problem, including Depth-First Search (DFS), Greedy Hill Climbing, Simulated Annealing, and Genetic Algorithms. Built a performance analysis framework to compare execution time, memory consumption, conflict reduction, and scalability across board sizes up to N=500. Included data visualization and benchmarking tools for algorithm evaluation and research." data-de="Entwicklung und Benchmarking mehrerer Optimierungsalgorithmen zur Lösung des N-Damen-Problems, darunter Tiefensuche (DFS), Greedy Hill Climbing, Simulated Annealing und genetische Algorithmen. Aufbau eines Performance-Analyse-Frameworks zum Vergleich von Ausführungszeit, Speicherverbrauch, Konfliktreduktion und Skalierbarkeit für Brettgrößen bis N=500. Inklusive Datenvisualisierung und Benchmarking-Tools für Algorithmus-Evaluation und Forschung.">Developed and benchmarked multiple optimization algorithms to solve the N-Queens problem, including Depth-First Search (DFS), Greedy Hill Climbing, Simulated Annealing, and Genetic Algorithms. Built a performance analysis framework to compare execution time, memory consumption, conflict reduction, and scalability across board sizes up to N=500. Included data visualization and benchmarking tools for algorithm evaluation and research.</p>
             <div class="project-stack">
-              <span>Python</span><span>CNN</span><span>AI</span><span>Computer Vision</span>
+              <span data-en="Algorithms" data-de="Algorithmen">Algorithms</span>
+              <span data-en="Optimization" data-de="Optimierung">Optimization</span>
+              <span data-en="Genetic Algorithm" data-de="Genetischer Algorithmus">Genetic Algorithm</span>
+              <span>Simulated Annealing</span>
+              <span>Python</span>
             </div>
             <div class="project-links">
-              <a href="https://github.com/jaskaranarora1/road-damage-detection-cnn" target="_blank">GitHub ↗</a>
+              <a href="https://github.com/jaskaranarora1/N-Queens-problem" target="_blank">GitHub ↗</a>
             </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EDUCATION ── -->
+  <section id="education" class="section section-dark">
+    <div class="container">
+      <p class="section-label" data-en="// where I studied" data-de="// wo ich studiert habe">// where I studied</p>
+      <h2 class="section-title" data-en="Education" data-de="Ausbildung">Education</h2>
+      <div class="edu-grid">
+        <div class="edu-card reveal">
+          <span class="edu-icon">🎓</span>
+          <div>
+            <h4 data-en="M.Sc. Computer &amp; Systems Engineering" data-de="M.Sc. Computer &amp; Systems Engineering">M.Sc. Computer &amp; Systems Engineering</h4>
+            <p>Technische Universität Ilmenau</p>
+            <span data-en="2026 – Present" data-de="2026 – heute">2026 – Present</span>
+          </div>
+        </div>
+        <div class="edu-card reveal">
+          <span class="edu-icon">🎓</span>
+          <div>
+            <h4 data-en="Bachelor of Computer Application" data-de="Bachelor of Computer Application">Bachelor of Computer Application</h4>
+            <p>Guru Nanak Dev University, Punjab</p>
+            <span>2020 – 2023 · GPA 7.59/10</span>
+          </div>
+        </div>
+        <div class="edu-card reveal">
+          <span class="edu-icon">🤖</span>
+          <div>
+            <h4 data-en="Certificate in AI &amp; Data Science" data-de="Zertifikat in KI &amp; Data Science">Certificate in AI &amp; Data Science</h4>
+            <p>GNDU Punjab</p>
+            <span>2022 – 2023 · 6.5/10</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ── -->
+  <section id="skills" class="section">
+    <div class="container">
+      <p class="section-label" data-en="// what I use" data-de="// was ich nutze">// what I use</p>
+      <h2 class="section-title" data-en="Skills &amp; Stack" data-de="Fähigkeiten &amp; Stack">Skills &amp; Stack</h2>
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-icon">⚛️</div>
+          <h3 data-en="Frontend" data-de="Frontend">Frontend</h3>
+          <div class="skill-tags">
+            <span>TypeScript</span><span>JavaScript</span><span>React.js</span>
+            <span>Next.js</span><span>Vue.js</span><span>HTML5</span>
+            <span>CSS3</span><span>Tailwind</span><span>Material UI</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">🛠️</div>
+          <h3 data-en="Backend" data-de="Backend">Backend</h3>
+          <div class="skill-tags">
+            <span>Node.js</span><span>Express.js</span><span>REST API</span>
+            <span>GraphQL</span><span>JWT</span><span>RBAC</span>
+            <span>MVC</span><span>OOP</span><span>Microservices</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">🗄️</div>
+          <h3 data-en="Databases" data-de="Datenbanken">Databases</h3>
+          <div class="skill-tags">
+            <span>MongoDB</span><span>PostgreSQL</span><span>MySQL</span>
+            <span>SQL</span><span>NoSQL</span><span>Indexing</span>
+            <span>Aggregation</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">🔐</div>
+          <h3 data-en="IT Security &amp; Networking" data-de="IT-Sicherheit &amp; Netzwerke">IT Security &amp; Networking</h3>
+          <div class="skill-tags">
+            <span>LAN/WAN</span><span>Router Config</span><span>Wi-Fi</span>
+            <span>Endpoint Protection</span><span>Vulnerability Analysis</span>
+            <span>Phishing Response</span><span>Firewall</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">💻</div>
+          <h3 data-en="Systems &amp; Tools" data-de="Systeme &amp; Tools">Systems &amp; Tools</h3>
+          <div class="skill-tags">
+            <span>Windows</span><span>Linux</span><span>macOS</span>
+            <span>Microsoft Office</span><span>Git</span><span>GitHub</span>
+            <span data-en="Documentation" data-de="Dokumentation">Documentation</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">🌍</div>
+          <h3 data-en="Soft Skills" data-de="Soft Skills">Soft Skills</h3>
+          <div class="skill-tags">
+            <span data-en="Problem Solving" data-de="Problemlösung">Problem Solving</span><span data-en="Team Work" data-de="Teamarbeit">Team Work</span>
+            <span data-en="Communication" data-de="Kommunikation">Communication</span><span data-en="Time Management" data-de="Zeitmanagement">Time Management</span>
+            <span data-en="Customer Support" data-de="Kundensupport">Customer Support</span><span data-en="Attention to Detail" data-de="Detailgenauigkeit">Attention to Detail</span>
           </div>
         </div>
       </div>
@@ -361,9 +354,9 @@
   <!-- ── CONTACT ── -->
   <section id="contact" class="section section-dark">
     <div class="container">
-      <p class="section-label">// let's connect</p>
-      <h2 class="section-title">Get In Touch</h2>
-      <p class="contact-intro">I'm currently open to working student and internship opportunities in IT Security and Full-Stack Development. Feel free to reach out through any of the channels below.</p>
+      <p class="section-label" data-en="// let's connect" data-de="// vernetzen wir uns">// let's connect</p>
+      <h2 class="section-title" data-en="Get In Touch" data-de="Kontakt aufnehmen">Get In Touch</h2>
+      <p class="contact-intro" data-en="I'm currently open to working student and internship opportunities in IT Security and Full-Stack Development. Feel free to reach out through any of the channels below." data-de="Ich bin derzeit offen für Werkstudenten- und Praktikumsstellen in den Bereichen IT-Sicherheit und Full-Stack-Entwicklung. Erreichen Sie mich gerne über einen der folgenden Kanäle.">I'm currently open to working student and internship opportunities in IT Security and Full-Stack Development. Feel free to reach out through any of the channels below.</p>
       <div class="contact-grid">
         <a class="contact-card reveal" href="https://github.com/jaskaranarora1" target="_blank">
           <div class="contact-card-icon github">
@@ -406,26 +399,25 @@
           <span class="contact-arrow">↗</span>
         </a>
         <a class="contact-card reveal" href="jaskaran_cv_english.pdf" download>
-  <div class="contact-card-icon cv">
-  <svg viewBox="0 0 24 24" fill="currentColor">
-    <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm-1 1.5L18.5 9H13V3.5zM8 17h8v1H8v-1zm0-3h8v1H8v-1zm0-3h5v1H8v-1z"/>
-  </svg>
-</div>
-  <h3>CV (English)</h3>
-  <p>Download English Resume</p>
-  <span class="contact-arrow">↓</span>
-</a>
-
-<a class="contact-card reveal" href="jaskaran_cv_German.pdf" download>
-  <div class="contact-card-icon cv">
-  <svg viewBox="0 0 24 24" fill="currentColor">
-    <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm-1 1.5L18.5 9H13V3.5zM8 17h8v1H8v-1zm0-3h8v1H8v-1zm0-3h5v1H8v-1z"/>
-  </svg>
-</div>
-  <h3>Lebenslauf (Deutsch)</h3>
-  <p>Deutsche Version herunterladen</p>
-  <span class="contact-arrow">↓</span>
-</a>
+          <div class="contact-card-icon cv">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm-1 1.5L18.5 9H13V3.5zM8 17h8v1H8v-1zm0-3h8v1H8v-1zm0-3h5v1H8v-1z"/>
+            </svg>
+          </div>
+          <h3 data-en="CV (English)" data-de="Lebenslauf (Englisch)">CV (English)</h3>
+          <p data-en="Download English Resume" data-de="Englischen Lebenslauf herunterladen">Download English Resume</p>
+          <span class="contact-arrow">↓</span>
+        </a>
+        <a class="contact-card reveal" href="jaskaran_cv_German.pdf" download>
+          <div class="contact-card-icon cv">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm-1 1.5L18.5 9H13V3.5zM8 17h8v1H8v-1zm0-3h8v1H8v-1zm0-3h5v1H8v-1z"/>
+            </svg>
+          </div>
+          <h3 data-en="CV (German)" data-de="Lebenslauf (Deutsch)">Lebenslauf (Deutsch)</h3>
+          <p data-en="Download German Resume" data-de="Deutsche Version herunterladen">Deutsche Version herunterladen</p>
+          <span class="contact-arrow">↓</span>
+        </a>
       </div>
     </div>
   </section>
@@ -434,11 +426,40 @@
   <footer>
     <div class="container footer-inner">
       <span class="nav-logo">JASS<span class="accent">.</span></span>
-      <p>Designed &amp; built by Jaskaran Singh &middot; Berlin 2025</p>
+      <p data-en="Designed &amp; built by Jaskaran Singh · Berlin 2025" data-de="Entworfen &amp; entwickelt von Jaskaran Singh · Berlin 2025">Designed &amp; built by Jaskaran Singh &middot; Berlin 2025</p>
       <p class="footer-note">M.Sc. Computer &amp; Systems Engineering · TU Ilmenau</p>
     </div>
   </footer>
 
   <script src="js/main.js"></script>
+
+  <!-- ── LANGUAGE TOGGLE SCRIPT ── -->
+  <script>
+  (function () {
+    const langToggle = document.getElementById('lang-toggle');
+    const opts = langToggle.querySelectorAll('.lang-opt');
+    let currentLang = localStorage.getItem('site-lang') || 'de';  // default German
+
+    function applyLanguage(lang) {
+      document.documentElement.lang = lang;
+      document.querySelectorAll('[data-en]').forEach(function (el) {
+        const text = el.getAttribute('data-' + lang);
+        if (text !== null) el.innerHTML = text;
+      });
+      langToggle.setAttribute('data-active', lang);
+      opts.forEach(function (o) {
+        o.classList.toggle('active', o.getAttribute('data-lang') === lang);
+      });
+      try { localStorage.setItem('site-lang', lang); } catch (e) {}
+    }
+
+    langToggle.addEventListener('click', function () {
+      currentLang = currentLang === 'en' ? 'de' : 'en';
+      applyLanguage(currentLang);
+    });
+
+    applyLanguage(currentLang);
+  })();
+</script>
 </body>
 </html>

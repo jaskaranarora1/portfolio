@@ -361,7 +361,7 @@ body {
 }
 .project-card:hover { border-color: var(--cyan); transform: translateY(-4px); }
 .project-img { position: relative; overflow: hidden; flex-shrink: 0; }
-.project-img img { width: 100%; display: block; aspect-ratio: 16/9; object-fit: contain; }
+.project-img img { width: 100%; display: block; height: auto; object-fit: contain; }
 .project-overlay {
   position: absolute; inset: 0; background: rgba(10,15,30,0.88);
   display: flex; align-items: center; justify-content: center;
@@ -499,4 +499,56 @@ img { max-width: 100%; height: auto; }
   .orb-1 { right: -20%; }
   .orb-2 { left: -20%; }
 }
+}
+
+/* ============================================
+   LANGUAGE TOGGLE — matches cyan/purple theme
+   ============================================ */
+
+.lang-toggle {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding: 3px;
+  margin-right: 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 50px;
+  background: var(--card);
+  cursor: pointer;
+  font-family: var(--font-code);
+  font-size: clamp(0.62rem, 1vw, 0.7rem);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  overflow: hidden;
+  flex-shrink: 0;
+  transition: border-color 0.2s;
+}
+.lang-toggle:hover { border-color: var(--cyan); }
+
+.lang-toggle .lang-opt {
+  position: relative;
+  z-index: 2;
+  padding: 3px 8px;
+  border-radius: 50px;
+  color: var(--muted);
+  transition: color 0.25s ease;
+  user-select: none;
+  line-height: 1;
+}
+
+.lang-toggle .lang-opt.active { color: var(--navy); }
+
+.lang-toggle .lang-slider {
+  position: absolute;
+  top: 3px;
+  bottom: 3px;
+  width: calc(50% - 3px);
+  border-radius: 50px;
+  background: linear-gradient(135deg, var(--cyan), var(--purple));
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1;
+}
+
+.lang-toggle[data-active="de"] .lang-slider {
+  transform: translateX(100%);
 }
