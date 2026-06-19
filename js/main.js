@@ -249,18 +249,28 @@ if (statsEl) {
 }
 
 // ── ACTIVE NAV ──
-const sections = document.querySelectorAll('section[id]');
+// ── ACTIVE NAV ── (scroll-position based, works for tall sections)
+const sections = [...document.querySelectorAll('section[id]')];
 const navLinks = document.querySelectorAll('.nav-links a');
-const navObs = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      navLinks.forEach(link => {
-        link.style.color = link.getAttribute('href') === `#${entry.target.id}` ? 'var(--cyan)' : '';
-      });
+
+function updateActiveNav() {
+  const scrollPos = window.scrollY + 120; // offset for fixed navbar
+  let currentId = sections[0].id;
+
+  for (const sec of sections) {
+    if (scrollPos >= sec.offsetTop) {
+      currentId = sec.id;
     }
+  }
+
+  navLinks.forEach(link => {
+    link.style.color = link.getAttribute('href') === `#${currentId}` ? 'var(--cyan)' : '';
   });
-}, { threshold: 0.4 });
-sections.forEach(s => navObs.observe(s));
+}
+
+window.addEventListener('scroll', updateActiveNav, { passive: true });
+window.addEventListener('resize', updateActiveNav);
+updateActiveNav();
 
 // ── HAMBURGER ──
 const hamburger = document.getElementById('hamburger');
